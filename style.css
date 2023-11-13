@@ -225,6 +225,9 @@ nav ul li a:hover{
     height: 75vh;
     margin-top: 10%;
   }
+  .questions:hover{
+    height: 80vh;
+  }
   
   .questions .section-title {
     text-align: center;
@@ -243,13 +246,14 @@ nav ul li a:hover{
   
   
   .questions-item {
-    background-color: rgb(97, 148, 97);
+    /* background-color: rgb(255, 255, 255); */
     padding: 1rem;
     cursor: pointer;
     transition: 0.4s;
     height: 100px;
-    width: 80%;
+    width: 90%;
     margin-left: 18%;
+   
     
     
   }
@@ -260,6 +264,9 @@ nav ul li a:hover{
     align-items: center;
     /* gap: 0.5rem; */
     transition: 0.4s;
+    background-color: #ffffff;
+    padding: 10px;
+    justify-content: center;
   }
   
   .questions-icon {
@@ -329,6 +336,7 @@ nav ul li a:hover{
     margin-left: 18%;
     margin-right: 18%;
     width: 60rem;
+    margin-bottom: 10%;
     
    
 }
