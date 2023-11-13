@@ -7,18 +7,21 @@
 
 :root{
     --primary-color: #ffffff;
-    --secondary-color:#000000;
-   
-
-    
+    --secondary-color:#000000;  
+    --third-color: rgb(85, 139, 94);
+    --text-colour:black;
+    --button-color:rgb(85, 139, 94);
 } 
 .dark-theme{
     --primary-color:#213628 ;
     --secondary-color:#ffffff;
+    --third-color: #213628;
+    --text-colour:#FFFFFF;
+    --button-color:#213628;
 }
 #moon{
     cursor: pointer;
-    background-color:#0d2814;
+    background-color:#213628;
 }
 /* ?Start nav bar */
 nav{
@@ -30,8 +33,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background:  #95c8a6;
-
+    background-color: var(--primary-color)
+    ;
+   
 
 }
 
@@ -46,12 +50,13 @@ span a{
   
 }
 span img{
-    background-color:#0d2814;
-
+    background-color:var(--secondary-color);
 }
+
 nav ul{
     padding-right: 350px;
 }
+
 nav ul li{
     display: inline-block;
     list-style: none;
@@ -73,12 +78,14 @@ nav ul li a:hover{
   position: relative;
   font-family: sans-serif;
   background:var(--primary-color);
+
 }
 
 .info{
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 8%;
 }
+
 .info h1{
     font-size: 80px;
     color: var(--secondary-color);
@@ -86,13 +93,20 @@ nav ul li a:hover{
     font-family: sans-serif;
     font-weight: 600;
 }
+.info h3{
+  font-size: 30px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    
+}
 .info p{
     color:var(--secondary-color);
-    font-weight: 300;
+    font-weight: 300; 
 }
 .b1{
-    background-color:var(--secondary-color);
-    color:var(--primary-color);
+    background-color:var(--button-color);
+    color:var(--secondary-color);
     padding: 10px 20px;
     margin: 30px 0;
     display: inline-block;
@@ -103,7 +117,7 @@ nav ul li a:hover{
     height: 15%;
     width: 30%;
     margin-left: 2%;
-   margin-top: 10%;
+   margin-top: 5%;
 }
 .first{
     
@@ -114,7 +128,7 @@ nav ul li a:hover{
 
 }
 .second{
-    background-color: #58b878;
+    background-color: var(--primary-color);
     height: 100vh;
 }
 .plant1{
@@ -126,7 +140,7 @@ nav ul li a:hover{
     display: flex;
     text-decoration: none;
     margin-left: 8%;
-    height: 100vh;
+    height: 70vh;
     margin-top: 10%;
 }
 
@@ -138,9 +152,10 @@ nav ul li a:hover{
 }
 
 .tick{
-    height: 4%;
-    width: 4%;
-    
+    height: 3%;
+    width: 3%;
+    background-color: var(--primary-color);
+
 }
 .aboutimg{
    margin-left: 7%;
@@ -148,8 +163,7 @@ nav ul li a:hover{
 }
 .aboutimg img{
     height: 60%;
-   
-   
+
 }
 .aboutimg img:hover{
     transform: scale(1.25);
@@ -157,8 +171,8 @@ nav ul li a:hover{
 }
 .shop{
     text-decoration: none;
-    background-color:var(--secondary-color);
-    color: #ffffff;
+    background-color:var(--button-color);
+    color: var(--secondary-color);
     border-radius: 5px;
     padding: 10px 20px;
 
@@ -175,6 +189,7 @@ nav ul li a:hover{
 
 .product h1{
     text-align: center;
+
 }
 
 .product .box-container{
@@ -183,11 +198,13 @@ nav ul li a:hover{
     margin-left: 15%;
     margin-right: 18%;
     padding-top: 50px;
-   
-   
+
 }
+
 .product .box-container .box{
-    background: #95c8a6;
+    background: var(--primary-color);
+    background-color: var(--third-color);
+    color: var(--secondary-color);
     border-radius: 1rem;
     box-shadow: rgb(12, 12, 11);
     outline:#000000 ;
@@ -197,8 +214,21 @@ nav ul li a:hover{
     height: 40vh;
 
 }
+.b2 {
+  background-color:var(--primary-color);
+  color:var(--secondary-color);
+  padding: 10px 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border-radius: 5px;
+}
+.b2:hover{
+  background-color:#213628;
+  color:rgb(255, 255, 255);
+}
+
 .product .box-container .box:hover{
-    outline:#f5f9f6 ;
+    outline:var(--primary-color);
     outline-offset: 1rem;
 }
 .product .box-container .box img{
@@ -207,24 +237,28 @@ nav ul li a:hover{
 }
 .product .box-container .box h3{
     font-size: 20px;
+   
 }
+
 .product .box-container .box .price{
     font-size: 25px;
 }
 .product .box-container .box i{
     font-size: 20px;
-    color:#0d2814;
+   
+    color:var(--secondary-color);
     
 }
 .product .box-container .box i:hover{
   transition: 0.5s;
   cursor: pointer;
-  color: rgb(255, 251, 0);
+  color: rgb(1, 255, 56);
 
 }
 /* Qustions and ask */
 .questions {
-    background-color: #95c8a6;
+    background-color:var(--third-color);
+   ;
     margin: 2rem 0;
     height: 75vh;
     margin-top: 10%;
@@ -244,6 +278,7 @@ nav ul li a:hover{
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
+    color: var(--text-colour);
     
   }
   
@@ -314,13 +349,15 @@ nav ul li a:hover{
 .review{
     text-align: center;
     height: 80vh;
-    margin-top: 150px;
-  
+   background: var(--primary-color); 
+   color: var(--secondary-color);
+   padding-top: 100px;
 
 }
 .review .review-slider{
     outline:#000000 ;
     outline-offset: -5rem;
+    margin-top: 200px;
     
 }
 .review .review-slider:hover{
@@ -335,24 +372,25 @@ nav ul li a:hover{
     padding-top: 50px;
 
 }
+.review
 
 /* FORM CSS */
 #form{
-    background-color: rgb(85, 139, 94);
-    height: 60vh;
+  height: 700vh;
 }
 #mainform{
     margin-left: 15%;
      width: 100rem;
-    margin-bottom: 10%;
-    
-   
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background: var(--third-color);
+    color: var(--primary-color);
 }
 #button{
     text-align: right;
-    background-color: rgb(85, 139, 94);
+    background-color: var(--button-color);
     padding: 20px 40px;
-    color: #FFFFFF;
+    color: white;
     font-weight: bolder;
 }
 #button:hover{
@@ -364,19 +402,19 @@ p{
 }
 .form-control{
     height: 36px;
-    background: #FFFFFF;
+    background:rgb(97, 148, 97);
     color: rgba(0,0,0,0.8);
     font-size: 14px;
-    border-radius: 2px;
-    box-shadow: none !important;
+    border-radius: 2px #213628 ;
+    box-shadow: none;
 }
 .contactForm .form-control{
     border: none;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgb(97, 148, 97);
     
 }
 .form-control:focus, .form-control:active{
-    border-color:rgb(156, 179, 156) ;
+    border-color:rgb(97, 148, 97) ;
 }
 /* .bi{
     font-size: 40px;

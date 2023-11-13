@@ -21,6 +21,8 @@ function initMap() {
   var googlemap = new google.maps.Map(document.getElementById("map"), options);
 }
 
+
+
  
 // const swiper = new Swiper('.js-testminoals-slider', {
 //     // Optional parameters
