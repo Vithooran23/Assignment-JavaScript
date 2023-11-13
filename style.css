@@ -4,9 +4,7 @@
     box-sizing: border-box;
    
 }
-@media screen {
-    
-}
+
 :root{
     --primary-color: #ffffff;
     --secondary-color:#000000;
@@ -22,24 +20,17 @@
     cursor: pointer;
     background-color:#0d2814;
 }
-.hero{
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    font-family: sans-serif;
-    background:var(--primary-color);
-    
-   
-}
+/* ?Start nav bar */
 nav{
-   height: 70px;
+   height: 100px;
     width: 100%;
-    padding-left: 2%;
+   padding-left: 4%; 
    position: fixed;
     display:flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
+    background:  #95c8a6;
 
 
 }
@@ -59,7 +50,7 @@ span img{
 
 }
 nav ul{
-    padding-right: 200px;
+    padding-right: 350px;
 }
 nav ul li{
     display: inline-block;
@@ -70,57 +61,65 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: var(--secondary-color);  
+    font-size: 20px;
 }
 nav ul li a:hover{
     color: rgb(247, 120, 17);
 }
+/* nav var End */
+.hero{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  font-family: sans-serif;
+  background:var(--primary-color);
+}
 
 .info{
-    margin-top: 12%;
+    margin-top: 10%;
     margin-left: 8%;
 }
 .info h1{
     font-size: 80px;
-    /* color:#0d2814; */
     color: var(--secondary-color);
-    
     margin-bottom: 20px;
     font-family: sans-serif;
-    font-weight: 700;
+    font-weight: 600;
 }
 .info p{
-    /* color: #000000; */
     color:var(--secondary-color);
-    font-weight: 200;
+    font-weight: 300;
 }
 .b1{
     background-color:var(--secondary-color);
-    /* color: rgb(7, 7, 7); */
     color:var(--primary-color);
     padding: 10px 20px;
     margin: 30px 0;
     display: inline-block;
     border-radius: 5px;
-   
 }
 
-
  .plant{
-    height: 12%;
-    width: 28%;
-    margin-left: 0%;
-    margin-top: 12%;
+    height: 15%;
+    width: 30%;
+    margin-left: 2%;
+   margin-top: 10%;
 }
 .first{
     
    display: flex;
    margin-left: 8%;
-  height: 100vh;
+   height:100vh;
+   padding-top: 10%;
 
 }
 .second{
     background-color: #58b878;
     height: 100vh;
+}
+.plant1{
+  padding-left: 100px;
+  padding-top: 5%;
 }
 /*  */
 .third{
@@ -130,22 +129,26 @@ nav ul li a:hover{
     height: 100vh;
     margin-top: 10%;
 }
+
 .text{
     text-align: justify;
     font-size: 20px;
-    margin-left: 8%;
+   padding-left: 8%;
+   
 }
+
 .tick{
-    height: 5%;
-    width: 5%;
-    margin-left: 8%;
+    height: 4%;
+    width: 4%;
+    
 }
 .aboutimg{
    margin-left: 7%;
     
 }
 .aboutimg img{
-    height: 70%;
+    height: 60%;
+   
    
 }
 .aboutimg img:hover{
@@ -160,10 +163,11 @@ nav ul li a:hover{
     padding: 10px 20px;
 
 }
+
 .third ul li{
     text-decoration: none;
     list-style: none;
-    margin-left: 0;
+    margin-left: -4%;
 
 }
 
@@ -177,7 +181,7 @@ nav ul li a:hover{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(5rem,4fr) ); 
     margin-left: 15%;
-    margin-right: 15%;
+    margin-right: 18%;
     padding-top: 50px;
    
    
@@ -189,8 +193,8 @@ nav ul li a:hover{
     outline:#000000 ;
     outline-offset: -1rem;
     padding: 10px;
-    width: 240px;
-    height: 45vh;
+    width: 290px;
+    height: 40vh;
 
 }
 .product .box-container .box:hover{
@@ -225,8 +229,15 @@ nav ul li a:hover{
     height: 75vh;
     margin-top: 10%;
   }
-  .questions:hover{
-    height: 80vh;
+  /* .questions:hover{
+    height: 100vh;
+  } */
+  #faqs{
+    height: 60vh;
+  
+  }
+  #faqs:hover{
+    height: 65vh;
   }
   
   .questions .section-title {
@@ -239,8 +250,7 @@ nav ul li a:hover{
   .questions-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   
   
@@ -252,10 +262,6 @@ nav ul li a:hover{
     transition: 0.4s;
     height: 100px;
     width: 90%;
-    margin-left: 18%;
-   
-    
-    
   }
   
   .questions-header {
@@ -269,12 +275,12 @@ nav ul li a:hover{
     justify-content: center;
   }
   
-  .questions-icon {
+  /* .questions-icon {
     font-size: 1.2rem;
     font-weight: 300px;
     color: rgb(255, 255, 255);
     transition: 0.4s;
-  }
+  } */
   
   .questions-description {
     font-size: 20px;
@@ -288,25 +294,28 @@ nav ul li a:hover{
     height: 200px;
     background-color: rgb(255, 255, 255);
   }
-  
-  .questions-item:hover .questions-header {
-    margin-bottom: 0.5rem;
-  }
-  
-  .questions-item:hover .questions-icon {
-    transform: rotate(45deg);
-  }
-  
+
   .questions-item:hover .questions-description {
-    opacity: 1;
+    opacity: 2;
   }
+  
+  /* .questions-item:hover .questions-header {
+    margin-bottom: 0.5rem;
+  } */
+  
+  /* .questions-item:hover .questions-icon {
+    transform: rotate(45deg);
+  } */
+  
+  
 /* end Qustions and ask */
 
 /* Team Review */
 .review{
     text-align: center;
-    height: 90vh;
-    margin-top: 100px;
+    height: 80vh;
+    margin-top: 150px;
+  
 
 }
 .review .review-slider{
@@ -333,9 +342,8 @@ nav ul li a:hover{
     height: 60vh;
 }
 #mainform{
-    margin-left: 18%;
-    margin-right: 18%;
-    width: 60rem;
+    margin-left: 15%;
+     width: 100rem;
     margin-bottom: 10%;
     
    
@@ -365,18 +373,19 @@ p{
 .contactForm .form-control{
     border: none;
     border-bottom: 1px solid rgba(0,0,0,0.2);
-    padding: 0;
+    
 }
 .form-control:focus, .form-control:active{
     border-color:rgb(156, 179, 156) ;
 }
-.bi{
+/* .bi{
     font-size: 40px;
-}
+} */
 
 /* ==Map Css== */
 #map{
   height: 500px;
+ 
 }
 /* ==End Mp == */
 /* FORM CSS END */

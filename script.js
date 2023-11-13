@@ -12,45 +12,45 @@ moon.onclick = function clickButton() {
 
 // Section 5 Cliet review
 
-/ map
+// map
 function initMap() {
   var options= {
-    zoom:20,
+    zoom:50,
     center:{lat:9.657770,lng:80.159210}
   }
   var googlemap = new google.maps.Map(document.getElementById("map"), options);
 }
 
+ 
+// const swiper = new Swiper('.js-testminoals-slider', {
+//     // Optional parameters
+//     // direction: 'vertical',
+//     grapCursor: true,
+//     spaceBetween :20,
+//     pagination: {
+//       el: '.js-testminoals-pagination',
+//       clickable:true,
+//     },
+//     // autoPlay: {
+//     //   Delay:7000,
+//     //   disableOnInteraction:false,
+//     // },
 
-const swiper = new Swiper('.js-testminoals-slider', {
-    // Optional parameters
-    // direction: 'vertical',
-    grapCursor: true,
-    spaceBetween :20,
-    pagination: {
-      el: '.js-testminoals-pagination',
-      clickable:true,
-    },
-    // autoPlay: {
-    //   Delay:7000,
-    //   disableOnInteraction:false,
-    // },
+//     // centerSlides:true,
+//     breakPoints: {
+//       0: {
+//         slidePerview:1,
+//       },
+//       750:{
+//         slidesPerview:2,
+//       },
+//       1050: {
+//         slidesPerview:3,
+//       },
 
-    // centerSlides:true,
-    breakPoints: {
-      0: {
-        slidePerview:1,
-      },
-      750:{
-        slidesPerview:2,
-      },
-      1050: {
-        slidesPerview:3,
-      },
+//     }
 
-    }
-
-  })
+//   })
 
   
     // If we need pagination
@@ -69,3 +69,4 @@ const swiper = new Swiper('.js-testminoals-slider', {
   //     el: '.swiper-scrollbar',
   //   },
   // });
+
