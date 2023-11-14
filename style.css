@@ -11,6 +11,7 @@
     --third-color: rgb(85, 139, 94);
     --text-colour:black;
     --button-color:rgb(85, 139, 94);
+    --slider-color:rgb(86, 195, 104);
 } 
 .dark-theme{
     --primary-color:#213628 ;
@@ -18,6 +19,7 @@
     --third-color: #213628;
     --text-colour:#FFFFFF;
     --button-color:#213628;
+    --slider-color:#213628;
 }
 #moon{
     cursor: pointer;
@@ -128,7 +130,7 @@ nav ul li a:hover{
 
 }
 .second{
-    background-color: var(--primary-color);
+    background-color: var(--slider-color);
     height: 100vh;
 }
 .plant1{
@@ -433,9 +435,12 @@ p{
 .footer-container {
     display: grid;
     grid-template-columns: repeat(4, max-content);
-  
-    justify-content: space-between;
     margin-top: 10%;
+    justify-content: space-between;
+    height: 40vh;
+    background: var(--primary-color);
+   
+    
 
   }
   
@@ -479,7 +484,7 @@ p{
   }
   
   .footer-input {
-   
+
     padding-right: 0.7rem;
     
   }
@@ -500,6 +505,7 @@ p{
     color: black;
     margin-bottom: 100px;
     transition: 0.3s;
+    text-decoration: none;
   }
   
   .footer-social {
