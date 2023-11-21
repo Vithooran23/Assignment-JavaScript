@@ -35,8 +35,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
-    background-color: var(--primary-color)
-    ;
+    background-color: var(--primary-color);
    
 
 }
@@ -52,7 +51,11 @@ span a{
   
 }
 span img{
-    background-color:var(--secondary-color);
+    background-color:var(--primary-color);
+    height: 6%;
+    width:6%;
+
+
 }
 
 nav ul{
@@ -80,6 +83,7 @@ nav ul li a:hover{
   position: relative;
   font-family: sans-serif;
   background:var(--primary-color);
+ 
 
 }
 
@@ -127,10 +131,11 @@ nav ul li a:hover{
    margin-left: 8%;
    height:100vh;
    padding-top: 10%;
+  
 
 }
 .second{
-    background-color: var(--slider-color);
+    background-color: var(--primary-color);
     height: 100vh;
 }
 .plant1{
@@ -138,14 +143,20 @@ nav ul li a:hover{
   padding-top: 5%;
 }
 /*  */
+
 .third{
     display: flex;
-    text-decoration: none;
+    height: 100vh;
     margin-left: 8%;
-    height: 70vh;
-    margin-top: 10%;
-}
+    padding-top: 10%;
+   text-align: center;
 
+  
+}
+.text h1{
+  font-size: 60px;
+  font-weight: 500;
+}
 .text{
     text-align: justify;
     font-size: 20px;
@@ -188,7 +199,11 @@ nav ul li a:hover{
 }
 
 /* Producut css start */
-
+#product{
+  height: 100vh;
+  padding-top: 5%;
+  
+}
 .product h1{
     text-align: center;
 
@@ -260,21 +275,20 @@ nav ul li a:hover{
 /* Qustions and ask */
 .questions {
     background-color:var(--third-color);
-   ;
     margin: 2rem 0;
-    height: 75vh;
-    margin-top: 10%;
-  }
-  /* .questions:hover{
     height: 100vh;
-  } */
+    margin-top: 15%;
+ 
+  }
+  
   #faqs{
     height: 60vh;
+    
   
   }
-  #faqs:hover{
+  /* #faqs:hover{
     height: 65vh;
-  }
+  } */
   
   .questions .section-title {
     text-align: center;
@@ -382,6 +396,7 @@ nav ul li a:hover{
 }
 #mainform{
     margin-left: 15%;
+   
      width: 100rem;
     margin-bottom: 5%;
     margin-top: 5%;
